@@ -1,0 +1,11 @@
+<DIV class="outer-div"> 
+	<h2>
+	The App Component 
+	</h2>
+</DIV>
+<app-navbar></app-navbar>
+<div [ngSwitch] = "compNum">
+	<app-data-binding *ngSwitchCase="1"></app-data-binding>
+	<app-directive-demo *ngSwitchCase="2"></app-directive-demo>
+	<div *ngSwitchDefault>No Component Selected</div>
+</div>
